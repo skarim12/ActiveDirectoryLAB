@@ -1,1 +1,36 @@
+STEP 1: Create Lab environments
 
+A) Started with downloading Windows 2022 and Windows 11 ISO from [](https://www.microsoft.com/en-us/evalcenter)
+  
+  Created Windows server 2022 VM with boot ISO: 
+    -Emulate Windows machine
+    -Default Machine:Intel ICH9 based PC (2009,x86_64) 
+    -6144 MB RAM
+    -Default CPU cores
+    -Storage: 64 GB
+    -Network: Shared Network
+
+  Created Windows 11 Enterprise VM with boot ISO:
+    -Virtualize Windows machine
+    -4096 MB RAM
+    -4 CPU cores
+    -Storage: 64 GB
+    -Network: Shared Network
+
+B) Server Install Desktop Setup: 
+    -Standard Evalutaion Desktop Experience with GUI
+    -Custom Installation to Drive Unallocated space 0
+    -created admin username and password
+    -Used utm guest-tools/spice-tools wizard and fixed resolution and other issues
+    -Renamed system to BigDC and rebooted
+
+  <img width="1470" height="956" alt="Image" src="https://github.com/user-attachments/assets/8f4b357e-31df-4ca9-903b-d294a03e4fb3" />
+
+C) Windows 11 Desktop Setup:
+    -Windows 11 Enterprise
+    -Installation to Drive Unallocated Space 0
+    -Created username and password for login
+    -Used utm guest-tools/spice-tools wizard and fixed resolution and other issues
+    -Renamed PC to desktop PC and rebooted
+
+    <img width="1470" height="956" alt="Image" src="https://github.com/user-attachments/assets/3d016745-ebc4-4a74-a0e2-35b612011ac0" />
