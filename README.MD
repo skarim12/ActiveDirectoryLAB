@@ -32,5 +32,5 @@ C) Windows 11 Desktop Setup:
     -Used utm guest-tools/spice-tools wizard and fixed resolution and other issues
     -Renamed PC to desktop PC and rebooted
 
-    ![image alt](https://github.com/skarim12/ActiveDirectoryLAB/blob/ac7d9a2334b1e09a67d0bce7cef500f78748fa89/networksettingwindows11.png)
+    ![diagram](https://github.com/skarim12/ActiveDirectoryLAB/blob/ac7d9a2334b1e09a67d0bce7cef500f78748fa89/networksettingwindows11.png)
 
