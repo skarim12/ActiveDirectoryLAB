@@ -1,6 +1,6 @@
 STEP 1: Create Lab environments
 
-A) Started with downloading Windows 2022 and Windows 11 ISO from [](https://www.microsoft.com/en-us/evalcenter)
+A) Started with downloading Windows 2022 and Windows 11 ISO from ![Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter)
   
   Created Windows server 2022 VM with boot ISO: 
     -Emulate Windows machine
