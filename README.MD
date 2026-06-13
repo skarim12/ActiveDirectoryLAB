@@ -281,32 +281,44 @@ I right-clicked the policy and selected **Enforce** to make sure it couldn't be 
 
 PowerShell is how real sysadmins and IT pros automate repetitive tasks at scale. Instead of clicking through the GUI to create every user one by one, I wrote a script to do it automatically.
 
-### Automating New User Account Creation
+#Script to create a new AD user with the parameters passed in by the user
 
-```powershell
-# Define user details
-$FirstName = "John"
-$LastName = "Doe"
-$Username = "jdoe"
-$OU = "OU=Engineering,DC=LAB,DC=local"
+#Getting parameters for script from user
+param (
+    [Parameter(Mandatory=$true)]
+    [string]$FirstName,
 
-# Generate a random password
-$Password = [System.Web.Security.Membership]::GeneratePassword(12, 2)
-$SecurePassword = ConvertTo-SecureString $Password -AsPlainText -Force
+    [Parameter(Mandatory=$true)]
+    [string]$LastName,
 
-# Create the user
+    [Parameter(Mandatory=$true)]
+    [string]$UserName,
+
+    [Parameter(Mandatory=$true)]
+    [string]$OU,
+
+    [Parameter(Mandatory=$true)]
+    [string]$Domain
+
+)
+
+#Generate Random Password
+$Password = -join((0x30..0x39)+(0x41..0x5A)+(0x61..0x7A) | Get-Random -Count 12 | ForEach-Object {[char]$_})
+Write-Host "Password Generated as: $Password"
+
+$SecurePassword = ($Password | ConvertTo-SecureString -AsPlainText -Force)
+#Make a call to New-ADUser to create the AD user
 New-ADUser `
+    -SamAccountName $UserName `
+    -UserPrincipalName "$Username@$Domain" `
+    -Name "$FirstName $LastName" `
     -GivenName $FirstName `
     -Surname $LastName `
-    -SamAccountName $Username `
-    -UserPrincipalName "$Username@LAB.local" `
-    -Path $OU `
     -AccountPassword $SecurePassword `
     -Enabled $true `
+    -Path "OU = $OU, DC = LAB, DC = local" `
     -PasswordNeverExpires $false `
     -ChangePasswordAtLogon $true
-
-Write-Host "User $Username created. Temp password: $Password"
 ```
 
 This script creates a new AD user in the correct OU, auto-generates a secure password, and forces them to reset it on first login. In an enterprise environment this kind of script gets run constantly during onboarding — creating this manually for every new hire isn't realistic at scale.
