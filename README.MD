@@ -46,6 +46,8 @@ The lab simulates a small company network with a domain controller, department-l
 
 I downloaded both ISOs directly from the **Microsoft Evaluation Center** — they offer free 180-day evaluation versions which is perfect for a lab.
 
+https://www.microsoft.com/en-us/evalcenter/
+
 ### Windows Server 2022 VM Settings
 
 | Setting | Value |
@@ -63,9 +65,7 @@ I downloaded both ISOs directly from the **Microsoft Evaluation Center** — the
 | RAM | 4096 MB |
 | CPU Cores | 4 |
 | Storage | 64 GB |
-| Network | Host Only (virtio-net-pci) |
-
-> **Why Host Only for Windows 11?** I needed both VMs to communicate with each other in an isolated network. Host Only mode means the client VM can only talk to the host machine and other VMs — not the internet directly. This is a closer simulation of a real internal corporate network.
+| Network | Shared Network (virtio-net-pci) |
 
 ### Guest Tools Setup
 
