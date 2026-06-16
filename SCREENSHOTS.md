@@ -1,4 +1,11 @@
+
+
+
+### Promoting DC
+![Promote DC](images/promoteDC.png)
+
 ### Screenshot 1
+
 ![Screenshot 1](images/Screenshot_2026-06-05_at_5.42.png)
 
 ### Screenshot 2
@@ -36,6 +43,12 @@
 
 ### Screenshot 13
 ![Screenshot 13](images/Screenshot_2026-06-09_at_2.18.png)
+
+### Windows 11 VM Settings
+![Image 2](images/1%2A4Eg4Y97CqTQXqu6QCrvmWQ.png)
+
+### Windows Server VM settings
+![Image 3](images/1%2AFPFJCHQl5h1kHX-7CmrpMQ.jpeg)
 
 ### Screenshot 14
 ![Screenshot 14](images/Screenshot_2026-06-09_at_2.33.png)
