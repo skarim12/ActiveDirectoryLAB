@@ -1,6 +1,4 @@
 
-
-
 ### Promoting DC
 ![Promote DC](images/promoteDC.png)
 
@@ -131,21 +129,9 @@
 ### Screenshot 40
 ![Screenshot 40](images/Screenshot_2026-06-11_at_2.07.png)
 
-### Screenshot 41
-![Screenshot 41](images/Screenshot2026-06-11at6.01.png)
 
-### Screenshot 42
+### Screenshot 41
 ![Screenshot 42](images/Screenshot%202026-06-12%20at%205.02.png)
 
-### Screenshot 43
-![Screenshot 43](images/1%2A4Eg4Y97CqTQXqu6QCrvmWQ.jpeg)
 
-### Screenshot 44
-![Screenshot 44](images/1%2A4Eg4Y97CqTQXqu6QCrvmWQ.png)
-
-### Screenshot 45
-![Screenshot 45](images/1%2AFPFJCHQl5h1kHX-7CmrpMQ.jpeg)
-
-### Screenshot 46
-![Screenshot 46](images/promoteDC.png)
 
